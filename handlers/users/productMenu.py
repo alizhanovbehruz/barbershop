@@ -16,6 +16,3 @@ async def products(message: types.Message):
 async def con(m: types.ContentType):
     await m.answer(m.contact.phone_number)
 
-@dp.message_handler(content_types=ContentType.ANY)
-async def comm(m : types.ContentType):
-    print(m)
